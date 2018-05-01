@@ -1,0 +1,14 @@
+<div class="container-body">
+  <!--Search bar area-->
+  <div class="row">
+    <div class="col-md-12">
+      <form class="well" (ngSubmit)="SearchUser()">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Enter github username..." [(ngModel)]="userName" name="username">
+          <button type="submit" name="username" class="btn btn-danger">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <p>{{userName}}</P>
+</div>
